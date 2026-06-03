@@ -1,0 +1,54 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 10px;
+}
+
+p {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1b1325;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #b695d5;
+    color: black;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+

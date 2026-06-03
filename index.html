@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/372bf40e06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Responsive navigation</title>
 </head>
 <body>
+    <ul class="nav" id="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 
+    <div id="main">
+        <h1>Hello!</h1>
+        <p>Make the window smaller to open the side navigation!</p>
+    </div>
+
+    
+
+    <script>
+    function resize() {
+      if (window.innerWidth < 700) {
+        openNav();
+      }
+      else {
+        closeNav()
+      }
+    }
+
+    function openNav() {
+      document.getElementById("side-nav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+     
+    }
+
+    function closeNav() {
+      document.getElementById("side-nav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+
+    window.addEventListener("resize", resize);
+    resize();
+  </script>
 </body>
 </html>
